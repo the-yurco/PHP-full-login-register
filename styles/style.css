@@ -6,6 +6,7 @@
 }
 
 body {
+  transition: all 0.3s;
   background: #393E46;
   display: grid;
   place-content: center;
@@ -22,6 +23,7 @@ body .error {
   color: red;
 }
 body form {
+  transition: all 0.3s;
   background: #222831;
   display: flex;
   flex-direction: column;

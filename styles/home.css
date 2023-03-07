@@ -6,13 +6,16 @@
 }
 
 body {
+  transition: all 0.3s;
   background: #393E46;
   display: grid;
   place-content: center;
   height: 100vh;
   width: 100vw;
 }
-body h1, body label, body button {
+body h1,
+body label,
+body button {
   color: #00ADB5;
 }
 body label {
@@ -22,11 +25,12 @@ body .error {
   color: red;
   text-align: center;
 }
-body form {
+body .wrapper {
+  transition: all 0.3s;
   background: #222831;
   display: flex;
   flex-direction: column;
-  height: 590px;
+  height: 400px;
   width: 400px;
   position: relative;
   justify-content: space-evenly;
@@ -35,20 +39,9 @@ body form {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 3px, rgba(0, 0, 0, 0.5) 0px 7px 13px -2px, rgba(0, 0, 0, 0.5) 0px -7px 0px inset;
 }
-body form .inputs {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5vw;
-  width: 80%;
-  margin: -10px 0 0 0;
-}
-body form .inputs input {
-  width: 100%;
-  padding: 15px 10px;
-  border: 1px solid #00ADB5;
-  border-radius: 5px;
-}
-body form button {
+body .wrapper a {
+  text-decoration: none;
+  color: #00ADB5;
   text-align: center;
   padding: 1vw 20%;
   display: flex;
@@ -59,10 +52,7 @@ body form button {
   cursor: pointer;
   transition: all 0.3s;
 }
-body form button:hover {
+body .wrapper a:hover {
   background: #00ADB5;
   color: white;
-}
-body form a {
-  color: #00ADB5;
-}/*# sourceMappingURL=register.css.map */
+}/*# sourceMappingURL=home.css.map */
