@@ -15,8 +15,11 @@
         <form action="./login.php" method="post">
 
             <?php
+            // checks whether the "err" parameter is set in the URL
             if (isset($_GET['err'])) {
+                // $_GET superglobal variable that contains all of the parameters passed in the URL
                 echo ('<p class="error">' . $_GET['err'] . '</p>');
+                // If the "err" parameter is set, this line will display an error message on the web page
             }
 
             ?>

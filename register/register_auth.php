@@ -25,6 +25,8 @@ if (isset($_POST['name']) && isset($_POST['password']) && (isset($_POST['usernam
         exit();
     } else {
         if ($heslo == $repassword) {
+
+            // These lines store the user's registration data in a PHP session. $_SESSION is a PHP superglobal variable that can be used to store data across multiple pages on a website.
             $_SESSION['meno'] = $meno;
             $_SESSION['password'] = $heslo;
             $_SESSION['username'] = $username;
